@@ -82,6 +82,92 @@ body {
   background-color: var(--primary-clr);
   grid-column: 2 / 3;
   grid-row: 1 / 2;
+  display: grid;
+  grid-template-columns: 5fr 2fr;
+  grid-template-rows: repeat(2, 1fr);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 0 3rem;
+  z-index: 1;
+}
+
+.searchbar {
+  display: flex;
+  grid-column: 1 / 2;
+  align-items: center;
+  gap: 15px;
+}
+
+.searchbar .search-icon {
+  font-size: 24px;
+}
+
+.searchbar .search-icon:hover {
+  cursor: pointer;
+} 
+
+.searchbar input {
+  background-color: var(--secondary-clr);
+  border: none;
+  border-radius: 20px;
+  height: 40px;
+  width: 90%;
+  padding: 0 10px;
+}
+
+.account {
+  grid-column: 2 / 3;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  justify-self: end;
+}
+
+.account .notifications-icon {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.account .account-icon {
+  height: 48px;
+  width: auto;
+  cursor: pointer;
+}
+
+.welcome {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.welcome img {
+  height: 72px;
+  width: auto;
+}
+
+.welcome .message {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-weight: bold;
+}
+
+.action-btn-group {
+  display: flex;
+  justify-self: end;
+  align-self: center;
+  gap: 2rem;
+}
+
+.action-btn {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  color: var(--primary-clr);
+  background-color: var(--sidebar-clr);
+  border: none;
+  border-radius: 28px;
+  padding: 1rem 3rem;
+  box-sizing: border-box;
 }
 
 #main {
